@@ -63,15 +63,18 @@ struct Node* Search(Node* root, int key) {
 int main() {
     struct Node* root = NULL;
 
+    //test create new and insert tree nodes
     root = insert(root, 15);
     insert(root, 24);
     insert(root, 25);
     insert(root, 2);
 
+    //display created nodes
     cout << root->right->key << endl;
     cout << root->right->right->key << endl;
     cout << root->left->key << endl;
 
+    //search nodes
     if(Search(root, 2)) cout << "true" ;
     else cout << "false";
 
